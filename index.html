@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentPG - PG Booking for Students</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>StudentPG</h1>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect Student Accommodation</h1>
+                <p>Discover affordable and comfortable PG accommodations near your college or university.</p>
+                <div class="search-box">
+                    <form action="#" method="GET">
+                        <div class="search-group">
+                            <input type="text" placeholder="Enter location or college name" required>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>PG Listings</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Cities</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10,000+</h3>
+                        <p>Happy Students</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.svg" alt="Student Accommodation">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose StudentPG?</h2>
+                <p>We make finding your perfect PG accommodation simple and stress-free</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Prime Locations</h3>
+                    <p>Find PGs near your college or university for convenient commuting</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Properties</h3>
+                    <p>All listings are verified for safety and security</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Budget Friendly</h3>
+                    <p>Options available for every budget with no hidden costs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Modern Amenities</h3>
+                    <p>High-speed WiFi, laundry, meals, and more included</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured PG Accommodations</h2>
+                <p>Browse through our top-rated PG accommodations</p>
+            </div>
+            <div class="filter-options">
+                <select id="city-filter">
+                    <option value="">All Cities</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="pune">Pune</option>
+                    <option value="hyderabad">Hyderabad</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">All Price Ranges</option>
+                    <option value="budget">Budget (₹5,000 - ₹8,000)</option>
+                    <option value="mid">Mid-Range (₹8,000 - ₹12,000)</option>
+                    <option value="premium">Premium (₹12,000+)</option>
+                </select>
+                <select id="room-filter">
+                    <option value="">All Room Types</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Sharing</option>
+                    <option value="triple">Triple Sharing</option>
+                </select>
+            </div>
+            <div class="properties-grid" id="properties-container">
+                <!-- Property cards will be loaded dynamically via JavaScript -->
+            </div>
+            <div class="view-more">
+                <a href="properties.html" class="btn btn-outline">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How StudentPG Works</h2>
+                <p>Find and book your perfect PG in just a few simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search</h3>
+                    <p>Enter your college name or preferred location to find nearby PGs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Compare</h3>
+                    <p>Compare prices, amenities, and reviews to find your perfect match</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book</h3>
+                    <p>Schedule a visit or book instantly with secure payment options</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Move In</h3>
+                    <p>Complete the paperwork and move into your new PG hassle-free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Hear from students who found their perfect PG through StudentPG</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <div class="student-image">
+                            <img src="images/student1.svg" alt="Student">
+                        </div>
+                        <div>
+                            <h3>Priya Sharma</h3>
+                            <p>Delhi University</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Finding a PG near my college was so easy with StudentPG. The booking process was smooth, and I love my new accommodation!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <div class="student-image">
+                            <img src="images/student2.svg" alt="Student">
+                        </div>
+                        <div>
+                            <h3>Rahul Patel</h3>
+                            <p>IIT Bombay</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The verified listings gave me peace of mind. I found a great PG with all the amenities I needed within my budget."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <div class="student-image">
+                            <img src="images/student3.svg" alt="Student">
+                        </div>
+                        <div>
+                            <h3>Ananya Gupta</h3>
+                            <p>Bangalore Institute of Technology</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The detailed photos and virtual tours helped me choose the perfect PG without even visiting in person. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prev-testimonial" class="testimonial-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial" class="testimonial-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Perfect PG?</h2>
+                <p>Join thousands of students who found their ideal accommodation with StudentPG</p>
+                <a href="signup.html" class="btn btn-primary">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>StudentPG</h2>
+                    <p>Your trusted partner for quality student accommodation</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#properties">Properties</a></li>
+                            <li><a href="index.html#how-it-works">How It Works</a></li>
+                            <li><a href="index.html#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Cities</h3>
+                        <ul>
+                            <li><a href="#">Delhi</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Bangalore</a></li>
+                            <li><a href="#">Pune</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 University Road, North Campus, Delhi</li>
+                            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                            <li><i class="fas fa-envelope"></i> info@studentpg.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StudentPG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
